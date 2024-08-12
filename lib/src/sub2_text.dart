@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-/// [Text] widget which uses the [TextTheme.subtitle2] style.
+/// [Text] widget which uses the [TextTheme.titleSmall] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/subtitle2.html
+@Deprecated('Use Text widget with style property set to TitleSmallText')
 class Sub2Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;
@@ -36,7 +37,7 @@ class Sub2Text extends StatelessWidget {
       );
 
   TextStyle _style(BuildContext context) =>
-      Theme.of(context).textTheme.subtitle2 ?? const TextStyle();
+      Theme.of(context).textTheme.titleSmall ?? const TextStyle();
 }
 
 extension Sub2Extension on String {

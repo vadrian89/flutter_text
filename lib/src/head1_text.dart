@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-/// [Text] widget which uses the [TextTheme.headline1] style.
+/// [Text] widget which uses the [TextTheme.displayLarge] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/headline1.html
+@Deprecated('Use Text widget with style property set to DisplayLargeText')
 class Head1Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;
@@ -36,7 +37,7 @@ class Head1Text extends StatelessWidget {
       );
 
   TextStyle _style(BuildContext context) =>
-      Theme.of(context).textTheme.headline1 ?? const TextStyle();
+      Theme.of(context).textTheme.displayLarge ?? const TextStyle();
 }
 
 extension Head1Extension on String {

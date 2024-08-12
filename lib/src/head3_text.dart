@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-/// [Text] widget which uses the [TextTheme.headline3] style.
+/// [Text] widget which uses the [TextTheme.displaySmall] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/headline3.html
+@Deprecated('Use Text widget with style property set to DisplaySmallText')
 class Head3Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;
@@ -36,7 +37,7 @@ class Head3Text extends StatelessWidget {
       );
 
   TextStyle _style(BuildContext context) =>
-      Theme.of(context).textTheme.headline3 ?? const TextStyle();
+      Theme.of(context).textTheme.displaySmall ?? const TextStyle();
 }
 
 extension Head3Extension on String {

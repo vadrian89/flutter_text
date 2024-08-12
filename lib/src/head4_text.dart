@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-/// [Text] widget which uses the [TextTheme.headline4] style.
+/// [Text] widget which uses the [TextTheme.headlineMedium] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/headline4.html
+@Deprecated('Use Text widget with style property set to HeadlineMediumText')
 class Head4Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;
@@ -36,7 +37,7 @@ class Head4Text extends StatelessWidget {
       );
 
   TextStyle _style(BuildContext context) =>
-      Theme.of(context).textTheme.headline4 ?? const TextStyle();
+      Theme.of(context).textTheme.headlineMedium ?? const TextStyle();
 }
 
 extension Head4Extension on String {
