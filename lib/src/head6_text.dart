@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// [Text] widget which uses the [TextTheme.headline6] style.
+/// [Text] widget which uses the [TextTheme.titleLarge] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/headline6.html
 class Head6Text extends StatelessWidget {
@@ -36,7 +36,7 @@ class Head6Text extends StatelessWidget {
       );
 
   TextStyle _style(BuildContext context) =>
-      Theme.of(context).textTheme.headline6 ?? const TextStyle();
+      Theme.of(context).textTheme.titleLarge ?? const TextStyle();
 }
 
 extension Head6Extension on String {

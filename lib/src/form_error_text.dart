@@ -10,7 +10,7 @@ class FormErrorText extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Text(
         text,
-        style: TextStyle(color: Theme.of(context).errorColor, fontSize: 12),
+        style: TextStyle(color: Theme.of(context).colorScheme.error, fontSize: 12),
       );
 }
 

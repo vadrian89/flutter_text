@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// [Text] widget which uses the [TextTheme.bodyText1] style.
+/// [Text] widget which uses the [TextTheme.bodyLarge] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/bodyText1.html
 class Body1Text extends StatelessWidget {
@@ -36,7 +36,7 @@ class Body1Text extends StatelessWidget {
       );
 
   TextStyle _style(BuildContext context) =>
-      Theme.of(context).textTheme.bodyText1 ?? const TextStyle();
+      Theme.of(context).textTheme.bodyLarge ?? const TextStyle();
 }
 
 extension Body1Extension on String {

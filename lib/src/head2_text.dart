@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// [Text] widget which uses the [TextTheme.headline2] style.
+/// [Text] widget which uses the [TextTheme.displayMedium] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/headline2.html
 class Head2Text extends StatelessWidget {
@@ -36,7 +36,7 @@ class Head2Text extends StatelessWidget {
       );
 
   TextStyle _style(BuildContext context) =>
-      Theme.of(context).textTheme.headline2 ?? const TextStyle();
+      Theme.of(context).textTheme.displayMedium ?? const TextStyle();
 }
 
 extension Head2Extension on String {
