@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 /// [Text] widget which uses the [TextTheme.bodyMedium] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/bodyText2.html
+@Deprecated('Use Text widget with style property set to BodyMediumText')
 class Body2Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;

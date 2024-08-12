@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 /// [Text] widget which uses the [TextTheme.titleLarge] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/headline6.html
+@Deprecated('Use Text widget with style property set to TitleLargeText')
 class Head6Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;

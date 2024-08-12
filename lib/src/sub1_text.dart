@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 /// [Text] widget which uses the [TextTheme.titleMedium] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/subtitle1.html
+@Deprecated('Use Text widget with style property set to TitleMediumText')
 class Sub1Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;

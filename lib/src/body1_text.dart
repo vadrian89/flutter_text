@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 /// [Text] widget which uses the [TextTheme.bodyLarge] style.
 ///
 /// For more info refer to API doc: https://api.flutter.dev/flutter/material/TextTheme/bodyText1.html
+@Deprecated('Use Text widget with style property set to BodyLargeText')
 class Body1Text extends StatelessWidget {
   /// The text displayed by the widget.
   final String text;
